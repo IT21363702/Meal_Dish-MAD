@@ -8,4 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="divider_grey">#686868</color>
+
+    <color name="green_2">#FF75975E</color>
+    <color name="green_1">#FF95BB72</color>
+    <color name="gray">#FFEBEBE4</color>
+    <color name="red_danger">#FFDC3545</color>
+    <color name="green_success">#FF4BB543</color>
+    <color name="yellow_warning">#FFEED202</color>
+    <color name="accent_greenMain">#00C786</color>
+    <color name="mainBlue">#1573FF</color>
 </resources>

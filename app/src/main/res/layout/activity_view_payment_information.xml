@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/title_your_payment_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="Your payment infomation"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="178dp"
+                tools:layout_editor_absoluteY="65dp" />
+
+            <TextView
+                android:id="@+id/textAccountHoldersName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="-"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/labelAccountHoldersName"
+                app:layout_constraintTop_toBottomOf="@+id/labelAccountHoldersName" />
+
+            <TextView
+                android:id="@+id/labelAccountHoldersName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account holder's name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--            app:layout_constraintTop_toBottomOf="@id/title_your_payment_information" -->
+
+            <TextView
+                android:id="@+id/textAccountNo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="-"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/labelAccountNo"
+                app:layout_constraintTop_toBottomOf="@+id/labelAccountNo" />
+
+            <TextView
+                android:id="@+id/labelAccountNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Account number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textAccountHoldersName" />
+
+            <TextView
+                android:id="@+id/textBankName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="-"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/labelBankName"
+                app:layout_constraintTop_toBottomOf="@+id/labelBankName" />
+
+            <TextView
+                android:id="@+id/labelBankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Bank name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textAccountNo" />
+
+
+            <TextView
+                android:id="@+id/textBankBranchName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="-"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/labelBankBranchName"
+                app:layout_constraintTop_toBottomOf="@+id/labelBankBranchName" />
+
+            <TextView
+                android:id="@+id/labelBankBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Bank Branch name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textBankName" />
+
+            <TextView
+                android:id="@+id/loading_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Loading..."
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/approvedSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fetching data..."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textBankBranchName"
+                app:layout_constraintBottom_toTopOf="@id/layout_for_buttons"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="342dp"
+                android:layout_margin="12dp"
+                />
+
+            <LinearLayout
+                android:id="@id/layout_for_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textBankBranchName"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="363dp">
+
+                <Button
+                    android:id="@+id/btnUpdatePaymentInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Edit details" />
+
+                <Button
+                    android:id="@+id/btnDeletePaymentInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="@color/red_danger"
+                    android:text="Delete Details" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

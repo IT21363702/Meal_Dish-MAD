@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:foregroundGravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="10sp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_width="122dp"
+        android:text="@string/payment_mgt_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_proceed_to_pay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="48dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/proceed_to_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentAmount" />
+
+    <Button
+        android:id="@+id/button_payment_history"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:layout_width="wrap_content"
+        android:text="@string/my_payment_history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_proceed_to_pay" />
+
+    <Button
+        android:id="@+id/button_enter_payment_information"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:layout_width="wrap_content"
+        android:text="@string/your_payment_information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_payment_history" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_enter_payment_information" />
+
+    <EditText
+        android:id="@+id/paymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--</ScrollView>-->

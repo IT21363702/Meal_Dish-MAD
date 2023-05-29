@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <EditText
+            android:id="@+id/editTextAccountHoldersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/labelAccountHoldersName"
+            app:layout_constraintTop_toBottomOf="@+id/labelAccountHoldersName" />
+
+        <TextView
+            android:id="@+id/labelAccountHoldersName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account holder's name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+<!--            app:layout_constraintTop_toBottomOf="@id/title_your_payment_information" -->
+
+        <EditText
+            android:id="@+id/editTextAccountNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Number"
+            app:layout_constraintStart_toStartOf="@+id/labelAccountNo"
+            app:layout_constraintTop_toBottomOf="@+id/labelAccountNo" />
+
+        <TextView
+            android:id="@+id/labelAccountNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Account number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAccountHoldersName" />
+
+        <EditText
+            android:id="@+id/editTextBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Bank Name"
+            app:layout_constraintStart_toStartOf="@+id/labelBankName"
+            app:layout_constraintTop_toBottomOf="@+id/labelBankName" />
+
+        <TextView
+            android:id="@+id/labelBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bank name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextAccountNo" />
+
+
+        <EditText
+            android:id="@+id/editTextBankBranchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Bank Branch"
+            app:layout_constraintStart_toStartOf="@+id/labelBankBranchName"
+            app:layout_constraintTop_toBottomOf="@+id/labelBankBranchName" />
+
+        <TextView
+            android:id="@+id/labelBankBranchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bank Branch name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextBankName" />
+
+        <Button
+            android:id="@+id/btnPayInfoSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_details"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextBankBranchName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:padding="50dp"
+            android:background="@color/white"
+            android:foregroundGravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/adminLogin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginBottom="48dp"
+                android:text="@string/adminLogin_title"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/adminLogin_uname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/adminLogin_uname_helper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/adminLogin_uname_helper"
+                app:layout_constraintBottom_toTopOf="@+id/adminLogin_uname"
+                app:layout_constraintEnd_toEndOf="@+id/adminLogin_uname"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/adminLogin_uname"
+                app:layout_constraintTop_toBottomOf="@+id/adminLogin_title"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/adminLogin_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/adminLogin_passw"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adminLogin_title"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/adminLogin_passw_helper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:text="@string/adminLogin_passw_helper"
+                app:layout_constraintBottom_toTopOf="@+id/adminLogin_passw"
+                app:layout_constraintEnd_toEndOf="@+id/adminLogin_passw"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/adminLogin_passw"
+                app:layout_constraintTop_toBottomOf="@+id/adminLogin_uname"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/adminLogin_passw"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toTopOf="@+id/adminLogin_loginBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adminLogin_uname"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/adminLogin_loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/adminLogin_loginBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adminLogin_passw" />
+
+            <TextView
+                android:id="@+id/adminLogin_bottomTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:text="@string/adminLogin_getAccNotice"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/adminLogin_loginBtn"
+                app:layout_constraintStart_toStartOf="@+id/adminLogin_loginBtn"
+                app:layout_constraintTop_toBottomOf="@id/adminLogin_loginBtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
